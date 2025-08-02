@@ -1,5 +1,4 @@
 .navbar {
-    border: 1px solid black;
     display: grid;
     grid-template-areas:
         "links logo icons";
@@ -9,6 +8,7 @@
     position: fixed;
     width: 100%;
     background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, .10);
 }
 
 .nav-links-wrapper ul {
