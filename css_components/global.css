@@ -1,4 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Gothic", serif;
+    font-size: x-large;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* Define the rows */
+    grid-template-areas:
+        "header"
+        "main";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    margin-top: 60px;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: "League Gothic", serif;
 }
