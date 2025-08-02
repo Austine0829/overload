@@ -1,0 +1,36 @@
+.navbar {
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+        "links logo icons";
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: .5rem 9rem;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-links-wrapper ul {
+    grid-area: links;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    margin-top: .5rem;
+}
+
+
+.nav-logo-wrapper {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    letter-spacing: -2px;
+}
+
+.nav-icons-wrapper {
+    grid-area: icons;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    margin-top: .5rem;
+}
