@@ -5,6 +5,7 @@
     height: 50rem;
     background-image: url('/assets/images/overload_bg.svg');
     background-size: 950px;
+    background-attachment: fixed;
 }
 
 .hero h1 {
