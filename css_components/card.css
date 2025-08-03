@@ -1,6 +1,10 @@
 .cards-wrapper {
-    padding: 3rem 9rem;
+    padding: 3rem 7rem;
     position: relative;
+}
+
+.cards-grid-wrapper {
+    padding: 3rem 7rem;
 }
 
 .card-header {
@@ -14,10 +18,15 @@
     gap: 1.5rem;
 }
 
+.cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(15px, 1fr));
+    gap: 2rem;
+}
+
 .cards-scrollable-container::-webkit-scrollbar {
     display: none;
 }
-
 
 .card {
     display: flex;
@@ -55,19 +64,19 @@
 }
 
 .card-scroll-button.left {
-    left: 8rem;
+    left: 6rem;
     background-image: url('/assets/icons/left_arrow.svg');
 }
 
 .card-scroll-button.left:hover {
-    left: 7.5rem;
+    left: 5.5rem;
 }
 
 .card-scroll-button.right {
-    right: 130px;
+    right: 6rem;
     background-image: url('/assets/icons/right_arrow.svg');
 }
 
 .card-scroll-button.right:hover {
-    right: 7.5rem;
+    right: 5.5rem;
 }
