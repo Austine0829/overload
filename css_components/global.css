@@ -29,3 +29,8 @@ body {
 button {
     font-family: "League Gothic", serif;
 }
+
+.line {
+    border: 1px solid black;
+    margin: 0 7rem;
+}
