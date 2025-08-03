@@ -1,0 +1,11 @@
+.banner-wrapper {
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.banner-wrapper img {
+    width: 100%;
+    height: auto;
+}
