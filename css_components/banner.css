@@ -9,3 +9,17 @@
     width: 100%;
     height: auto;
 }
+
+.banner-wrapper.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .banner-wrapper {
+        display: none;
+    }
+
+    .banner-wrapper.mobile {
+        display: flex;
+    }
+}
