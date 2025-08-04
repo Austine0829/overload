@@ -94,7 +94,7 @@
     .cards-grid-container {
         display: grid;
         grid-template-columns: repeat(2, minmax(150px, 1fr));
-        gap: .5rem;
+        gap: 1.5rem;
     }
 
     .card.mobile-card {
