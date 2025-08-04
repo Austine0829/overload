@@ -20,6 +20,9 @@
     margin-top: .5rem;
 }
 
+.nav-menu {
+    display: none;
+}
 
 .nav-logo-wrapper {
     grid-area: logo;
@@ -33,5 +36,26 @@
     display: flex;
     gap: 2rem;
     justify-content: end;
-    margin-top: .5rem;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links-wrapper ul {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .nav-icons-wrapper {
+        gap: 1rem;
+    }
+
+    .nav-icons-wrapper img {
+        width: 20px;
+    }
 }
