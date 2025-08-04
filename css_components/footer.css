@@ -24,3 +24,21 @@
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 1024px) {
+    .footer-wrapper {
+        padding: 2rem 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .footer-box-row-one {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+
+    .footer-box-row-two {
+        justify-content: center;
+    }
+}
