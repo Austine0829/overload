@@ -65,19 +65,25 @@
 }
 
 .card-scroll-button.left {
-    left: 6rem;
+    left: 100px;
     background-image: url('/assets/icons/left_arrow.svg');
 }
 
-.card-scroll-button.left:hover {
-    left: 5.5rem;
-}
-
 .card-scroll-button.right {
-    right: 6rem;
+    right: 100px;
     background-image: url('/assets/icons/right_arrow.svg');
 }
 
-.card-scroll-button.right:hover {
-    right: 5.5rem;
+@media (max-width: 768px) {
+    .cards-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .card-scroll-button.left {
+        left: 5px;
+    }
+
+    .card-scroll-button.right {
+        right: 5px;
+    }
 }
