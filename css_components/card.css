@@ -57,6 +57,7 @@
     border: none;
     cursor: pointer;
     background-position: center;
+    border-radius: .5rem;
 }
 
 .card-scroll-button:hover {
