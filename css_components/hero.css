@@ -4,7 +4,7 @@
     align-items: center;
     height: 50rem;
     background-image: url('/assets/images/overload_bg.svg');
-    background-size: 950px;
+    background-size: 100vw;
     background-attachment: fixed;
     margin-right: .5rem;
 }
