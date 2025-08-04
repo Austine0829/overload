@@ -42,7 +42,7 @@
     background-color: rgb(56, 56, 56);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .grid-wrapper {
         padding: 2rem 1rem;
     }

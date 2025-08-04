@@ -74,7 +74,7 @@
     background-image: url('/assets/icons/right_arrow.svg');
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .cards-wrapper {
         padding: 2rem 1rem;
     }
@@ -85,5 +85,23 @@
 
     .card-scroll-button.right {
         right: 5px;
+    }
+
+    .cards-grid-wrapper {
+        padding: 3rem 1rem;
+    }
+
+    .cards-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: .5rem;
+    }
+
+    .card.mobile-card {
+        width: auto;
+    }
+
+    .card.mobile-card img {
+        height: auto;
     }
 }
