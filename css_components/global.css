@@ -34,3 +34,9 @@ button {
     border: 1px solid black;
     margin: 0 7rem;
 }
+
+@media (max-width: 768px) {
+    .line {
+        margin: 0 1rem;
+    }
+}
