@@ -10,7 +10,7 @@
     height: auto;
 }
 
-.banner-wrapper.mobile {
+.banner-wrapper.mobile-banner {
     display: none;
 }
 
@@ -19,7 +19,7 @@
         display: none;
     }
 
-    .banner-wrapper.mobile {
+    .banner-wrapper.mobile-banner {
         display: flex;
     }
 }
