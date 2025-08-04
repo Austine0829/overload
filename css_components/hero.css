@@ -24,3 +24,21 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+        height: 30rem;
+    }
+
+    @keyframes spread {
+        0% {
+            letter-spacing: -2rem;
+            transform: scale(0.8);
+        }
+
+        100% {
+            letter-spacing: -.5rem;
+            transform: scale(1);
+        }
+    }
+}
