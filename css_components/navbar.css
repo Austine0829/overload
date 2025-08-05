@@ -38,6 +38,12 @@
     justify-content: end;
 }
 
+.cart-icon {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
 @media (max-width: 1024px) {
     .navbar {
         padding: .5rem 1rem;
@@ -67,5 +73,9 @@
 
     .nav-icons-wrapper img {
         width: 20px;
+    }
+
+    .cart-badge {
+        font-size: .8rem;
     }
 }
