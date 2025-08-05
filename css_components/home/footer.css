@@ -1,5 +1,5 @@
 .footer-wrapper {
-    border: 1px solid gray;
+    border-top: 1px solid black;
     padding: 2rem 7rem;
     display: flex;
     flex-direction: column;
