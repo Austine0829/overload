@@ -1,0 +1,16 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+
+.hero h1 {
+    font-size: clamp(1rem, 25vw, 10rem);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 15rem;
+    }
+}
