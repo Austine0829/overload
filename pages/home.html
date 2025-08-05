@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css_components/grid.css">
     <link rel="stylesheet" href="/css_components/banner.css">
     <link rel="stylesheet" href="/css_components/footer.css">
+    <link rel="stylesheet" href="/css_components/cart.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <title>Overload - Home</title>
 </head>
@@ -45,7 +46,49 @@
                 <img src="/assets/icons/cart_icon.svg">
             </div>
         </nav>
+
+        <aside>
+            <div class="cart-wrapper">
+                <div class="cart-container">
+                    <div class="cart-header">
+                        <label class="cart-item-count">
+                            You currently have 1 item on your cart.
+                        </label>
+                        <img src="/assets/icons/close_cart_icon.svg">
+                    </div>
+
+                    <div class="cart-items-container">
+                        <div class="cart-item-header">
+                            <img src="/assets/icons/remove_cart_item_icon.svg">
+                        </div>
+                        <div class="cart-item-image">
+                            <img src="/assets/images/opx_tshirt.png">
+                        </div>
+                        <div class="cart-item-info-and-quantity">
+                            <label>October Praise X T-Shirt</label>
+                            <label>Black</label>
+                            <label>Small</label>
+                            <div class="cart-item-quantity">
+                                <button class="cart-item-decrement">
+                                    <img src="/assets/icons/decrement_icon.svg">
+                                </button>
+                                <input class="item-quantity no-spinner" type="number" value="1">
+                                <button class="cart-item-increment">
+                                    <img src="/assets//icons/increment_icon.svg">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <label>$10</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </header>
+
+
+
     <main class="main">
         <section>
             <div class="hero">
