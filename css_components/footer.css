@@ -16,10 +16,6 @@
     text-decoration: none;
 }
 
-.footer-box-row-one a label {
-    cursor: pointer;
-}
-
 .footer-box-row-two {
     display: flex;
     gap: 1rem;
