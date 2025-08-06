@@ -5,7 +5,6 @@
     display: flex;
     justify-content: end;
     z-index: 1500;
-    display: none;
 }
 
 .cart-container {
@@ -91,4 +90,14 @@
 .cart-item-price {
     display: flex;
     justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .cart-items-container {
+        grid-template-columns: 1fr 10rem 1fr;
+    }
+
+    .cart-item-info-and-quantity {
+        white-space: normal;
+    }
 }
