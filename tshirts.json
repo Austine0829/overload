@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "October Praise X INTO YOUR GLORY T-Shirt",
+        "img": "/assets/images/opx_tshirt.png",
+        "price": "550",
+        "color": "Black",
+        "status": "new"
+    },
+    {
+        "id": "2",
+        "name": "October Praise VI ENCODE T-Shirt",
+        "img": "/assets/images/opvi_tshirt.png",
+        "price": "450",
+        "color": "White",
+        "status": "new"
+    },
+    {
+        "id": "3",
+        "name": "October Praise VIII BEAT WPD x OVERLOAD T-Shirt",
+        "img": "/assets/images/opviii_tshirt.png",
+        "price": "500",
+        "color": "Black",
+        "status": "new"
+    },
+    {
+        "id": "4",
+        "name": "October Praise IX RESURGENCE T-Shirt",
+        "img": "/assets/images/opix_tshirt.png",
+        "price": "450",
+        "color": "Black",
+        "status": "new"
+    },
+    {
+        "id": "5",
+        "name": "October Praise XI HOLY FOREVER T-Shirt",
+        "img": "/assets/images/opxi_tshirt.png",
+        "price": "500",
+        "color": "Black",
+        "status": "new"
+    },
+    {
+        "id": "6",
+        "name": "Overload Blessed T-Shirt",
+        "img": "/assets/images/overload_blessed_black_tshirt.png",
+        "price": "450",
+        "color": "Black",
+        "status": "old"
+    },
+    {
+        "id": "7",
+        "name": "Overload Blessed T-Shirt",
+        "img": "/assets/images/overload_blessed_white_tshirt.png",
+        "price": "450",
+        "color": "White",
+        "status": "old"
+    }
+]
