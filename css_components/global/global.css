@@ -16,6 +16,10 @@ body {
     min-height: 100vh;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .header {
     grid-area: header;
 }
