@@ -6,6 +6,7 @@
     justify-content: end;
     z-index: 1500;
     backdrop-filter: blur(10px);
+    display: none;
 }
 
 .show-cart {
