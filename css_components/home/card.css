@@ -15,13 +15,14 @@
 .cards-scrollable-container {
     display: flex;
     overflow-x: auto;
-    gap: 1.5rem;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
 }
 
 .cards-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .cards-scrollable-container::-webkit-scrollbar {
@@ -32,6 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 18rem;
+    scroll-snap-align: start;
 }
 
 .card img {
@@ -105,5 +107,13 @@
 
     .card.mobile-card img {
         height: auto;
+    }
+
+    .card-name-and-price-wrapper {
+        font-size: 1.1rem;
+    }
+
+    .card-color-description-wrapper {
+        font-size: 1rem;
     }
 }
