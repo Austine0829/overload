@@ -44,7 +44,7 @@
         "name": "Overload Blessed T-Shirt",
         "img": "/assets/images/overload_blessed_black_tshirt.png",
         "price": "450",
-        "color": "Black",
+        "color": "White",
         "status": "old"
     },
     {
@@ -52,7 +52,7 @@
         "name": "Overload Blessed T-Shirt",
         "img": "/assets/images/overload_blessed_white_tshirt.png",
         "price": "450",
-        "color": "White",
+        "color": "Black",
         "status": "old"
     }
 ]
