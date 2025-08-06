@@ -36,12 +36,14 @@
 
 .card img {
     height: 22rem;
+    object-fit: cover;
 }
 
 .card-name-and-price-wrapper {
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
+    gap: 1rem;
 }
 
 .card-color-description-wrapper {
