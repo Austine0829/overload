@@ -17,6 +17,7 @@
     min-height: 20vh;
     height: auto;
     gap: .5rem;
+    margin-bottom: .4rem;
 }
 
 .grid-container.mobile {
@@ -28,17 +29,17 @@
     margin-top: -.4rem;
 }
 
-.grid-wrapper button {
+.grid-wrapper a {
     padding: .7em;
     font-size: .7em;
     color: white;
     background-color: black;
     border: none;
     cursor: pointer;
-    border-radius: .5rem;
+    ;
 }
 
-.grid-wrapper button:hover {
+.grid-wrapper a:hover {
     background-color: rgb(56, 56, 56);
 }
 
