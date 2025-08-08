@@ -83,6 +83,11 @@
     padding: 0 1rem;
 }
 
+.item-color,
+.item-size {
+    font-size: 1.2rem;
+}
+
 .cart-item-quantity {
     display: flex;
     width: fit-content;
@@ -113,6 +118,7 @@
 .cart-item-price {
     display: flex;
     justify-content: end;
+    font-size: 1.3rem;
 }
 
 .cart-checkout {
@@ -139,5 +145,9 @@
 
     .cart-item-info-and-quantity {
         white-space: normal;
+    }
+
+    .cart-checkout {
+        height: 70px;
     }
 }
