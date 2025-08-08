@@ -122,8 +122,8 @@ function getCartItems() {
                                 </div>
                                 <div class="cart-item-info-and-quantity">
                                     <label>${merchandise.name}</label>
-                                    <label>${merchandise.color}</label>
-                                    <label>${merchandise.size}</label>
+                                    <label class="item-color">${merchandise.color}</label>
+                                    <label class="item-size">${merchandise.size}</label>
                                     <div class="cart-item-quantity">
                                         <button class="cart-item-decrement">
                                             <img src="/assets/icons/decrement_icon.svg">
