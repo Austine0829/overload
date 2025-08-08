@@ -2,6 +2,15 @@ const cardsScrollableContainer = document.querySelector('.cards-scrollable-conta
 const leftScroll = document.querySelector('.card-scroll-button.left');
 const rightScroll = document.querySelector('.card-scroll-button.right');
 
+leftScroll.addEventListener('click', () => {
+    cardsScrollableContainer.scrollBy({ left: -1, behavior: 'smooth' });
+});
+
+rightScroll.addEventListener('click', () => {
+    cardsScrollableContainer.scrollBy({ left: 1, behavior: 'smooth' });
+});
+
+
 async function getAllNewProduct() {
     try {
         const response = await fetch("/tshirts.json");
@@ -31,14 +40,6 @@ async function getAllNewProduct() {
         console.log('Error Details: ', error);
     }
 }
-
-leftScroll.addEventListener('click', () => {
-    cardsScrollableContainer.scrollBy({ left: -1, behavior: 'smooth' });
-});
-
-rightScroll.addEventListener('click', () => {
-    cardsScrollableContainer.scrollBy({ left: 1, behavior: 'smooth' });
-});
 
 async function getAllProduct() {
     try {
