@@ -112,11 +112,12 @@ async function addToCart(id, size) {
 
     const cart = JSON.parse(localStorage.getItem(CART_ITEMS)) || [];
 
-    const isExisting = cart.some(i => i.id == merchandise.id);
+    const isExisting = cart.some(i => i.id == merchandise.id && i.size == size);
     if (isExisting) return;
 
     cart.push(merchandise);
     localStorage.setItem(CART_ITEMS, JSON.stringify(cart));
+    displayCartItemCount();
 }
 
 renderAndInitializeElements();
