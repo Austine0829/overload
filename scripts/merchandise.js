@@ -1,6 +1,35 @@
 const gridContainer = document.querySelector('.grid-container');
 const CART_ITEMS = 'cart-items';
 
+gridContainer.addEventListener('click', (e) => {
+    if (!e.target.matches('.size-radio')) return;
+    const sizeBox = e.target.closest('.size-box');
+    const gridBoxSizes = e.target.closest('.grid-box-sizes');
+    const allSizeBox = gridBoxSizes.querySelectorAll('.size-box');
+
+    allSizeBox.forEach(box => {
+        box.style.color = 'black';
+        box.style.backgroundColor = 'white';
+    });
+
+    sizeBox.style.color = 'white';
+    sizeBox.style.backgroundColor = 'black';
+});
+
+gridContainer.addEventListener('click', (e) => {
+    if (!e.target.matches('.add-to-cart')) return;
+    const id = e.target.dataset.id;
+    const gridBoxSizes = e.target.previousElementSibling;
+    const sizeRadio = gridBoxSizes.querySelectorAll('.size-radio');
+
+    sizeRadio.forEach(radio => {
+        if (radio.checked) {
+            var size = radio.value;
+            addToCart(id, size);
+        }
+    });
+});
+
 async function renderAndInitializeElements() {
     await getAllMerchandise();
     colorAllCheckedRadio();
@@ -74,41 +103,12 @@ function colorAllCheckedRadio() {
     });
 }
 
-gridContainer.addEventListener('click', (e) => {
-    if (!e.target.matches('.size-radio')) return;
-    const sizeBox = e.target.closest('.size-box');
-    const gridBoxSizes = e.target.closest('.grid-box-sizes');
-    const allSizeBox = gridBoxSizes.querySelectorAll('.size-box');
-
-    allSizeBox.forEach(box => {
-        box.style.color = 'black';
-        box.style.backgroundColor = 'white';
-    });
-
-    sizeBox.style.color = 'white';
-    sizeBox.style.backgroundColor = 'black';
-});
-
-gridContainer.addEventListener('click', (e) => {
-    if (!e.target.matches('.add-to-cart')) return;
-    const id = e.target.dataset.id;
-    const gridBoxSizes = e.target.previousElementSibling;
-    const sizeRadio = gridBoxSizes.querySelectorAll('.size-radio');
-
-    sizeRadio.forEach(radio => {
-        if (radio.checked) {
-            var size = radio.value;
-            addToCart(id, size);
-        }
-    });
-});
-
 async function addToCart(id, size) {
     const response = await fetch('/tshirts.json');
     const data = await response.json();
 
     const merchandise = data.find(d => d.id == id);
-    Object.assign(merchandise, { size: size });
+    Object.assign(merchandise, { size: size, quantity: 1 });
 
     const cart = JSON.parse(localStorage.getItem(CART_ITEMS)) || [];
 
