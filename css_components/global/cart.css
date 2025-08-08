@@ -81,7 +81,6 @@
     flex-direction: column;
     font-size: 1.3rem;
     padding: 0 1rem;
-    white-space: nowrap;
 }
 
 .cart-item-quantity {
