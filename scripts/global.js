@@ -7,12 +7,13 @@ cartItemsContainer.addEventListener('click', (e) => {
         const button = e.target.closest('.cart-item-decrement');
         const quantity = button.nextElementSibling;
         const id = quantity.dataset.id;
+        const sizeId = quantity.dataset.sizeId;
         const newQuantity = parseInt(quantity.value) - 1;
 
         if (newQuantity <= 0) return;
 
         quantity.value = newQuantity;
-        updateItemQuantity(id, newQuantity);
+        updateItemQuantity(id, sizeId, newQuantity);
         getCartItemsTotal();
     }
 
@@ -20,10 +21,11 @@ cartItemsContainer.addEventListener('click', (e) => {
         const button = e.target.closest('.cart-item-increment');
         const quantity = button.previousElementSibling;
         const id = quantity.dataset.id;
+        const sizeId = quantity.dataset.sizeId;
         const newQuantity = parseInt(quantity.value) + 1;
 
         quantity.value = newQuantity;
-        updateItemQuantity(id, newQuantity);
+        updateItemQuantity(id, sizeId, newQuantity);
         getCartItemsTotal();
     }
 
@@ -42,6 +44,7 @@ cartItemsContainer.addEventListener('focusout', (e) => {
     if (e.target.closest('.item-quantity')) {
         const quantity = e.target.closest('.item-quantity');
         const id = quantity.dataset.id;
+        const sizeId = quantity.dataset.sizeId;
         const newQuantity = quantity.value;
 
         if (newQuantity <= 0) {
@@ -49,7 +52,7 @@ cartItemsContainer.addEventListener('focusout', (e) => {
             return;
         };
 
-        updateItemQuantity(id, newQuantity);
+        updateItemQuantity(id, sizeId, newQuantity);
         getCartItemsTotal();
     }
 });
@@ -92,11 +95,11 @@ function removeItem(id, size) {
     localStorage.setItem(CART_ITEMS, JSON.stringify(newCart));
 }
 
-function updateItemQuantity(id, newQuantity) {
+function updateItemQuantity(id, size, newQuantity) {
     const cart = JSON.parse(localStorage.getItem(CART_ITEMS));
 
     cart.forEach(item => {
-        if (item.id == id)
+        if (item.id == id && item.size == size)
             item.quantity = newQuantity;
     });
 
@@ -128,7 +131,7 @@ function getCartItems() {
                                         <button class="cart-item-decrement">
                                             <img src="/assets/icons/decrement_icon.svg">
                                         </button>
-                                        <input class="item-quantity no-spinner" data-id="${merchandise.id}" type="number" value="${merchandise.quantity}">
+                                        <input class="item-quantity no-spinner" data-id="${merchandise.id}" data-size-id="${merchandise.size}" type="number" value="${merchandise.quantity}">
                                         <button class="cart-item-increment">
                                             <img src="/assets//icons/increment_icon.svg">
                                         </button>
