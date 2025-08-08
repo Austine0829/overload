@@ -1,5 +1,4 @@
 const gridContainer = document.querySelector('.grid-container');
-const CART_ITEMS = 'cart-items';
 
 gridContainer.addEventListener('click', (e) => {
     if (!e.target.matches('.size-radio')) return;
