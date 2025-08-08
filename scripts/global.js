@@ -78,9 +78,6 @@ document.querySelector('.cart-close').addEventListener('click', () => {
     displayCartItemCount();
 });
 
-window.addEventListener('resize', setCartWrapperHeight);
-window.addEventListener('load', setCartWrapperHeight);
-
 function displayCartItemCount() {
     const cart = JSON.parse(localStorage.getItem(CART_ITEMS)) || [];
     document.querySelector('.cart-badge').innerHTML = cart.length;
@@ -171,5 +168,8 @@ function setCartWrapperHeight() {
     const cartWrapper = document.querySelector('.cart-wrapper');
     cartWrapper.style.height = `${window.innerHeight}px`;
 }
+
+window.addEventListener('resize', setCartWrapperHeight);
+window.addEventListener('load', setCartWrapperHeight);
 
 displayCartItemCount();
