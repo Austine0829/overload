@@ -1,5 +1,6 @@
 const cart = document.querySelector('.cart-wrapper');
 const cartItemsContainer = document.querySelector('.cart-items-container');
+const CART_ITEMS = 'cart-items';
 
 cartItemsContainer.addEventListener('click', (e) => {
     if (e.target.closest('.cart-item-decrement')) {
