@@ -21,7 +21,7 @@
 
 .cards-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
 }
 
@@ -34,6 +34,11 @@
     flex-direction: column;
     width: 18rem;
     scroll-snap-align: start;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
@@ -99,14 +104,6 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(150px, 1fr));
         gap: 1.5rem;
-    }
-
-    .card.mobile-card {
-        width: auto;
-    }
-
-    .card.mobile-card img {
-        height: auto;
     }
 
     .card-name-and-price-wrapper {
