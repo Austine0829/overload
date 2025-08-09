@@ -52,7 +52,7 @@ async function getAllProduct() {
         const data = await response.json();
         for (const item of data) {
             const card = document.createElement('div');
-            card.setAttribute('class', 'card mobile-card');
+            card.setAttribute('class', 'card-grid mobile-card');
 
             card.innerHTML = `<img src="${item.img}">
                                 <div class="card-name-and-price-wrapper">
