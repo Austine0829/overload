@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css_components/home/banner.css">
     <link rel="stylesheet" href="/css_components/home/footer.css">
     <link rel="stylesheet" href="/css_components/global/cart.css">
+    <link rel="stylesheet" href="/css_components/global/login-modal.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <title>Overload - Home</title>
 </head>
@@ -44,13 +45,36 @@
             </div>
 
             <div class="nav-icons-wrapper">
-                <img src="/assets/icons/login_icon.svg">
+                <img class="login-icon" src="/assets/icons/login_icon.svg">
                 <div class="cart-icon">
                     <img src="/assets/icons/cart_icon.svg">
                     <span class="cart-badge">0</span>
                 </div>
             </div>
         </nav>
+
+
+        <div class="login-modal-wrapper">
+            <div class="login-modal">
+                <div class="login-modal-header">
+                    <h1>OVERLOAD</h1>
+                </div>
+                <div class="login-modal-body">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Password</label>
+                    <input type="text">
+                    <button class="login-button">Login</button>
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="login-modal-footer">
+                    <button class="create-button">Create new account</button>
+                    <button class="close-login-modal">
+                        <img src="/assets/icons/close_cart_icon.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
 
         <aside>
             <div class="cart-wrapper">
@@ -215,6 +239,7 @@
 
     <script src="/scripts/home.js"></script>
     <script src="/scripts/global.js"></script>
+    <script src="/scripts/login-modal.js"></script>
 </body>
 
 </html>
