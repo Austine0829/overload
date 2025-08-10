@@ -169,7 +169,6 @@ function setCartWrapperHeight() {
     cartWrapper.style.height = `${window.innerHeight}px`;
 }
 
-window.addEventListener('resize', setCartWrapperHeight);
 window.addEventListener('load', setCartWrapperHeight);
 
 displayCartItemCount();
