@@ -128,7 +128,6 @@
 
 .cart-checkout-wrapper {
     grid-area: button;
-    border: 1px solid;
     height: 3.5rem;
 }
 
@@ -140,6 +139,7 @@
     height: 100%;
     display: none;
     cursor: pointer;
+    border: none;
 }
 
 .show-checkout {
